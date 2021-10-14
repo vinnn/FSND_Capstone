@@ -5,6 +5,9 @@ README
 
 For deployment on Heroku:
 
+# install gunicorn
+$ pip3 install gunicorn
+
 # create a requirements.txt
 $ pip3 freeze > requirements.txt
 
