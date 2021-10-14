@@ -30,7 +30,7 @@ def create_app(test_config=None):
 
 
     setup_db(app)
-    #CORS(app)
+    CORS(app)
 
     #########################################################
     ## DROP ALL RECORDS AND START YOUR DB FROM SCRATCH
@@ -241,3 +241,11 @@ def create_app(test_config=None):
     
     
     return app
+
+
+app = create_app()
+
+if __name__ == '__main__':
+    #app.run(host='0.0.0.0', port=8080, debug=True)
+    app.run()
+
