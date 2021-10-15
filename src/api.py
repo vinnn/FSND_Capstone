@@ -32,6 +32,27 @@ def create_app(test_config=None):
     setup_db(app)
     CORS(app)
 
+
+
+    #########################################################
+    ## CORS Headers   [TO BE CHECKED]
+    #########################################################
+    # @app.after_request
+    # def after_request(response):
+    #     response.headers.add(
+    #     'Access-Control-Allow-Headers',
+    #     'Content-Type,Authorization,true')
+    #     response.headers.add(
+    #     'Access-Control-Allow-Methods',
+    #     'GET,PUT,POST,DELETE,OPTIONS')
+    #     return response
+
+
+
+
+
+
+
     #########################################################
     ## DROP ALL RECORDS AND START YOUR DB FROM SCRATCH
     #########################################################
