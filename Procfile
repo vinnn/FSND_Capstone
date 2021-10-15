@@ -1,1 +1,1 @@
-web: gunicorn src.api --preload -b 0.0.0.0:8000
+web: gunicorn 'src.api:create_app()'
