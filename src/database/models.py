@@ -34,7 +34,7 @@ import json
 #  POSTGRES SETUP  ###################################
 database_name = "db_capstone"
 database_path = "postgresql://{}/{}".format('localhost:5432', database_name)
-
+# postgresql://localhost:5432/db_capstone
 db = SQLAlchemy()
 
 '''
