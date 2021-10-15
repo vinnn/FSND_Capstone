@@ -97,9 +97,9 @@ def create_app(test_config=None):
                 or error status code with reason for failure
     '''
     @app.route('/actors', methods=['POST'])
-    @requires_auth(permission='post:actors')
-    def post_actors(payload):
-    #def post_actors():
+    #@requires_auth(permission='post:actors')
+    #def post_actors(payload):
+    def post_actors():
         try:
             
             body = request.get_json()
