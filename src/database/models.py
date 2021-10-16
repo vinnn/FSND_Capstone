@@ -35,7 +35,21 @@ import json
 database_name = "db_capstone"
 database_path = "postgresql://{}/{}".format('localhost:5432', database_name)
 # postgresql://localhost:5432/db_capstone
+
+database_path = "postgres://nfkphcncctfhsr:28a0b6b1e059768d27a4f75e8034b9d8dfa36395ca7011c1614f28503974b6ac@ec2-54-195-246-55.eu-west-1.compute.amazonaws.com:5432/d69ah6men0oka"
+
+
 db = SQLAlchemy()
+
+
+print("%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%")
+print("%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%")
+print("%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%")
+print("%%%%%%%%%%%%%%%%%%%%%% DATABASE_URL : %%%%%%%%%%%%%%%%%%%%%%%%%%%")
+print(database_path)
+print("%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%")
+print("%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%")
+print("%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%")
 
 '''
 setup_db(app)
